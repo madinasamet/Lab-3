@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>lab2</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+		<style>
+		body{
+			background: rgb(238,174,202);
+			background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+		}
+		.registration{
+			padding: 30px 100px;
+			text-align: left;
+			margin: 17px 530px;
+			display:table;
+			border:2px solid white;
+			background-color: white;
+			font-family: 'Poppins', sans-serif;
+			border-radius: 10px;
+		}
+		h2{
+			text-align: center;
+		}
+		.text input {
+  			outline: none;
+  			border: 1px solid #e5e7eb;
+  			margin: 8px 0;
+			background-color: #fff;
+  			padding: 13px;
+  			padding-right: 48px;
+  			font-size: 14px;
+  			line-height: 20px;
+  			width: 300px;
+  			border-radius: 3px;
+  			box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+		}
+		.button{
+			background-color:#7892c2;
+			border-radius:42px;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family:'Poppins', sans-serif;
+			font-size:14px;
+			padding:10px 20px;
+			text-decoration:none;
+			text-shadow:0px 0px 0px #283966;
+		}
+		.button:hover{
+			background-color:#476e9e;
+		}
+		.button:active{
+			position:relative;
+			top:1px;
+		}
+
+		</style>
+	</head>
+	<body>
+		<div class="registration">
+			<h2>Registration</h2>
+			<div class="text">
+				<label for="name">Full name:</label><br>
+				<input placeholder="Enter name" type="text" id="name"><br>
+				<label for="telnum">Telephone number:</label><br>
+				<input placeholder="+7 (XXX) XXX  XX  XX" type="tel" id="telnum"><br>
+				<label for="email">Email:</label><br>
+				<input placeholder="name@gmail.com" type="email" id="email"><br>
+				<label for="passw">Password:</label><br>
+				<input placeholder="********" type="password" id="passw"><br><br>
+			</div>
+			<label for="bdate">Date of Birth:</label><br>
+			<div class="text">
+				<input type="date" id="bdate"><br>
+			</div>
+			<p>Choose your gender:</p>
+			
+			<input type="radio" id="male">
+			<label for="male">Male </label>
+			<input type="radio" id="female">
+			<label for="female">Female </label>
+			<input type="radio" id="other">
+			<label for="other">Other</label><br>
+			
+			<p>Do you like books?</p>
+			<input type="checkbox" id="yes">
+			<label for="yes">Yes </label>
+			<input type="checkbox" id="no">
+			<label for="no">No</label><br><br>
+
+			<a href="/secondpage.html" class="button">Next Page</a>
+		</div>
+		
+	</body>
+</html>
